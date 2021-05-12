@@ -6,23 +6,22 @@ import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
-import android.support.design.widget.AppBarLayout
-import android.support.design.widget.AppBarLayout.OnOffsetChangedListener
-import android.support.design.widget.CollapsingToolbarLayout
-import android.support.design.widget.NavigationView
-import android.support.v4.app.Fragment
-import android.support.v4.widget.DrawerLayout
-import android.support.v7.app.ActionBarDrawerToggle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.github.clans.fab.FloatingActionButton
 import com.github.clans.fab.FloatingActionMenu
+import com.google.android.material.appbar.AppBarLayout
+import com.google.android.material.appbar.CollapsingToolbarLayout
+import com.google.android.material.navigation.NavigationView
 import com.motivation.team3.motivateme.activity.AboutActivity
 import com.motivation.team3.motivateme.activity.HelpActivity
 import com.motivation.team3.motivateme.fragment.*
@@ -44,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setInstance(this)
-        toolbar = findViewById(R.id.toolbar) as Toolbar
+        toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         floatingActionButtonList = arrayOfNulls(5)
         for (i in floatingActionButtonList.indices) {
@@ -100,7 +99,7 @@ class MainActivity : AppCompatActivity() {
         collapsingToolbar!!.title = " "
         val appBarLayout = findViewById(R.id.appbar) as AppBarLayout
         appBarLayout.setExpanded(true)
-        appBarLayout.addOnOffsetChangedListener(object : OnOffsetChangedListener {
+        appBarLayout.addOnOffsetChangedListener(object : AppBarLayout.OnOffsetChangedListener {
             var isShow = false
             var scrollRange = -1
             override fun onOffsetChanged(appBarLayout: AppBarLayout, verticalOffset: Int) {

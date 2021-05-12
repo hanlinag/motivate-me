@@ -6,8 +6,8 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.os.Vibrator
-import android.support.v4.content.WakefulBroadcastReceiver
 import android.widget.Toast
+import androidx.legacy.content.WakefulBroadcastReceiver
 import com.motivation.team3.motivateme.database.TaskDbHelper
 import com.motivation.team3.motivateme.other.AppConstant
 

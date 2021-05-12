@@ -1,17 +1,15 @@
 package com.motivation.team3.motivateme.listener
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.RecyclerView.OnItemTouchListener
 import android.view.GestureDetector
 import android.view.GestureDetector.SimpleOnGestureListener
 import android.view.MotionEvent
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 
 
-class RecyclerItemClickListener(context: Context, listener: OnItemClickListener?) :
-    OnItemTouchListener {
-    private val context: Context = context
+class RecyclerItemClickListener(private val context: Context, listener: OnItemClickListener?) :
+    RecyclerView.OnItemTouchListener {
     private val mListener: OnItemClickListener? = listener
 
     interface OnItemClickListener {

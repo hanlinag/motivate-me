@@ -9,8 +9,8 @@ import com.motivation.team3.motivateme.model.Contact
 import com.motivation.team3.motivateme.model.Note
 
 class TaskDbHelper(aContext: Context?) {
-    private val openHelper: DatabaseOpenHelper
-    private val database: SQLiteDatabase
+    private val openHelper: DatabaseOpenHelper = DatabaseOpenHelper(aContext)
+    private val database: SQLiteDatabase = openHelper.writableDatabase
     fun insertData(count: Int, title: String?, body: String?, time: String?, date: String?) {
         val contentValues = ContentValues()
         contentValues.put(TABLE_COLUM_COUNT, count)
@@ -23,12 +23,12 @@ class TaskDbHelper(aContext: Context?) {
 
     val allData: Cursor
         get() {
-            val buildSQL = "SELECT * FROM " + TABLE_NAME
+            val buildSQL = "SELECT * FROM $TABLE_NAME"
             return database.rawQuery(buildSQL, null)
         }
 
     fun getData(id: Int): Contact? {
-        val buildSQL = "SELECT * FROM " + TABLE_NAME
+        val buildSQL = "SELECT * FROM $TABLE_NAME"
         val cursor = database.rawQuery(buildSQL, null)
         if (cursor.moveToPosition(id)) {
             val idd = cursor.getInt(cursor.getColumnIndex(cursor.getColumnName(0)))
@@ -48,7 +48,7 @@ class TaskDbHelper(aContext: Context?) {
 
     fun getID(title: String): String {
         var id = ""
-        val buildSQL = "SELECT * FROM " + TABLE_NAME
+        val buildSQL = "SELECT * FROM $TABLE_NAME"
         val cursor = database.rawQuery(buildSQL, null)
         if (cursor.moveToFirst()) {
             do {
@@ -74,7 +74,7 @@ class TaskDbHelper(aContext: Context?) {
         contentValues.put(TABLE_COLUMN_BODY, body)
         contentValues.put(TABLE_COLUM_TIME, time)
         contentValues.put(TABLE_COLUM_DATE, date)
-        return database.update(TABLE_NAME, contentValues, TABLE_COLUMN_ID + " =  ? ", arrayOf(id))
+        return database.update(TABLE_NAME, contentValues, "$TABLE_COLUMN_ID =  ? ", arrayOf(id))
     }
 
     fun deleteData(id: String) {
@@ -83,7 +83,7 @@ class TaskDbHelper(aContext: Context?) {
 
     val count: Int
         get() {
-            val buildSQL = "SELECT * FROM " + TABLE_NAME
+            val buildSQL = "SELECT * FROM $TABLE_NAME"
             val cursor = database.rawQuery(buildSQL, null)
             var count = 0
             if (cursor.moveToFirst()) {
@@ -286,8 +286,4 @@ class TaskDbHelper(aContext: Context?) {
         private const val TABLE_COLUMN_HOME_DATE = "homedate"
     }
 
-    init {
-        openHelper = DatabaseOpenHelper(aContext)
-        database = openHelper.writableDatabase
-    }
 }

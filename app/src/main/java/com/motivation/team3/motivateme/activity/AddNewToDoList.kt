@@ -1,17 +1,18 @@
 package com.motivation.team3.motivateme.activity
 
+import android.annotation.SuppressLint
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.database.TaskDbHelper
 import com.motivation.team3.motivateme.service.AlarmReceiver
@@ -38,6 +39,7 @@ class AddNewToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     private lateinit var calNow: Calendar
     var calSet: Calendar? = null
     var count = 0
+    @SuppressLint("RestrictedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.newnote_layout)
@@ -121,7 +123,7 @@ class AddNewToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         timepickerdialog.vibrate(true)
         timepickerdialog.dismissOnPause(true)
         timepickerdialog.enableSeconds(false)
-        timepickerdialog.show(fragmentManager, "Timepickerdialog")
+        timepickerdialog.show(supportFragmentManager, "Timepickerdialog")
     }
 
     fun openDatePickerDialog() {
@@ -135,7 +137,7 @@ class AddNewToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         datePickerDialog.isThemeDark = false
         datePickerDialog.vibrate(true)
         datePickerDialog.dismissOnPause(true)
-        datePickerDialog.show(fragmentManager, "Datepickerdialog")
+        datePickerDialog.show(supportFragmentManager, "Datepickerdialog")
     }
 
     override fun onDateSet(view: DatePickerDialog, year: Int, monthOfYear: Int, dayOfMonth: Int) {
@@ -159,7 +161,8 @@ class AddNewToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         alarmManager!![AlarmManager.RTC_WAKEUP, targetcal!!.timeInMillis] = pendingIntent
     }
 
-    override fun onTimeSet(view: RadialPickerLayout, hourOfDay: Int, minute: Int, second: Int) {
+
+    override fun onTimeSet(view: TimePickerDialog?, hourOfDay: Int, minute: Int, second: Int) {
         val dt = Date(0, 0, 0, hourOfDay, minute, second)
         val sdf = SimpleDateFormat("hh:mm a")
         timeText = sdf.format(dt)

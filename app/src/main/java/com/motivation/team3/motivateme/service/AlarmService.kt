@@ -5,8 +5,8 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Intent
 import android.media.RingtoneManager
-import android.support.v4.app.NotificationCompat
 import android.util.Log
+import androidx.core.app.NotificationCompat
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.fragment.ToDoListFragment
 import com.motivation.team3.motivateme.other.AppConstant

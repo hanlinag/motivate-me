@@ -2,10 +2,10 @@ package com.motivation.team3.motivateme.activity
 
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.motivation.team3.motivateme.R
 import com.readystatesoftware.systembartint.SystemBarTintManager
 

@@ -6,14 +6,14 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.support.v4.app.Fragment
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.activity.UpdateToDoList
 import com.motivation.team3.motivateme.adapter.CustomToDoListAdapter
@@ -37,15 +37,15 @@ class ToDoListFragment : Fragment() {
         super.onCreate(savedInstanceState)
         db = TaskDbHelper(activity)
         recyclerView = view.findViewById<View>(R.id.recycler_view) as RecyclerView
-        customAdapter = CustomToDoListAdapter(activity, db!!.allData)
+        customAdapter = CustomToDoListAdapter(requireContext(), db!!.allData)
         val layoutManager: RecyclerView.LayoutManager = GridLayoutManager(activity, 1)
         recyclerView!!.layoutManager = layoutManager
         recyclerView!!.itemAnimator = DefaultItemAnimator()
         recyclerView!!.adapter = customAdapter
         onResume()
-        recyclerView!!.addOnItemTouchListener(
+        /*recyclerView!!.addOnItemTouchListener(
             RecyclerItemClickListener(
-                activity,
+                requireContext(),
                 object : RecyclerItemClickListener.OnItemClickListener {
                     override fun onItemClick(view: View?, position: Int) {
                         val contract = db!!.getData(position)
@@ -60,7 +60,7 @@ class ToDoListFragment : Fragment() {
                         startActivity(`in`)
                     }
                 })
-        )
+        )*/
 
         val simpleItemTouchCallBack: ItemTouchHelper.SimpleCallback =
             object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
@@ -94,7 +94,7 @@ class ToDoListFragment : Fragment() {
         val id = contact!!.id
         val intent = Intent(activity, AlarmReceiver::class.java)
         val pendingIntent = PendingIntent.getBroadcast(activity, id, intent, 0)
-        val alarmManager = activity.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val alarmManager = activity?.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         alarmManager.cancel(pendingIntent)
         db!!.deleteData(id.toString())
     }
@@ -102,7 +102,7 @@ class ToDoListFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         Handler().post {
-            customAdapter = CustomToDoListAdapter(activity, db!!.allData)
+            customAdapter = CustomToDoListAdapter(requireContext(), db!!.allData)
             recyclerView!!.adapter = customAdapter
         }
     }

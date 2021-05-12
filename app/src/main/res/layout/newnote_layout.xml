@@ -8,11 +8,11 @@
     android:orientation="vertical">
 
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/appToolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -20,7 +20,7 @@
             app:popupTheme="@color/colorPrimary"
             app:title="To Do List" />
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <EditText
         android:id="@+id/new_title"

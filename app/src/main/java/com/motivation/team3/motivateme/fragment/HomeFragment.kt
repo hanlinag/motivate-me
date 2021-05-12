@@ -1,14 +1,14 @@
 package com.motivation.team3.motivateme.fragment
 
 import android.os.Bundle
-import android.support.design.widget.CollapsingToolbarLayout
-import android.support.v4.app.Fragment
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.motivation.team3.motivateme.MainActivity
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.adapter.CustomHomeAdapter
@@ -19,10 +19,10 @@ import java.util.*
 
 class HomeFragment : Fragment() {
     private lateinit var activityTitles: Array<String>
-    private var collapsingToolbar: CollapsingToolbarLayout? = null
-    private var recyclerView: RecyclerView? = null
-    private var adapter: CustomHomeAdapter? = null
-    private var list: MutableList<Home>? = null
+    private lateinit var collapsingToolbar: CollapsingToolbarLayout
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: CustomHomeAdapter
+    private lateinit var list: MutableList<Home>
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -32,39 +32,47 @@ class HomeFragment : Fragment() {
         recyclerView = view.findViewById<View>(R.id.my_cycler_view) as RecyclerView
         list = ArrayList()
         prepareHome()
-        adapter = CustomHomeAdapter(context, list!!)
+        adapter = CustomHomeAdapter(requireContext(), list!!)
         val mLayoutManager: RecyclerView.LayoutManager = GridLayoutManager(context, 1)
         recyclerView!!.layoutManager = mLayoutManager
         recyclerView!!.itemAnimator = DefaultItemAnimator()
         recyclerView!!.adapter = adapter
         activityTitles = resources.getStringArray(R.array.nav_item_activity_titles)
 
-        recyclerView!!.addOnItemTouchListener(
+        recyclerView.setOnClickListener {
+
+        }
+        /*recyclerView!!.addOnItemTouchListener(
             RecyclerItemClickListener(
-                activity,
+                requireContext(),
                 object : RecyclerItemClickListener.OnItemClickListener {
                     override fun onItemClick(view: View?, position: Int) {
-                        collapsingToolbar =
-                            view!!.findViewById<View>(R.id.collapsing_toolbar) as CollapsingToolbarLayout
-                        if (position == 0) {
-                            val toDoListFragment = ToDoListFragment()
-                            fragmentTransition(toDoListFragment, position)
-                        } else if (position == 1) {
-                            val notesFragment = NotesFragment()
-                            fragmentTransition(notesFragment, position)
-                        } else if (position == 2) {
-                            val quotesFragment = QuotesFragment()
-                            fragmentTransition(quotesFragment, position)
-                        } else if (position == 3) {
-                            val songFragment = SongFragment()
-                            fragmentTransition(songFragment, position)
-                        } else if (position == 4) {
-                            val tellBeadsFragment = TellBeadsFragment()
-                            fragmentTransition(tellBeadsFragment, position)
+                        collapsingToolbar = view?.findViewById(R.id.collapsing_toolbar) as CollapsingToolbarLayout
+                        when (position) {
+                            0 -> {
+                                val toDoListFragment = ToDoListFragment()
+                                fragmentTransition(toDoListFragment, position)
+                            }
+                            1 -> {
+                                val notesFragment = NotesFragment()
+                                fragmentTransition(notesFragment, position)
+                            }
+                            2 -> {
+                                val quotesFragment = QuotesFragment()
+                                fragmentTransition(quotesFragment, position)
+                            }
+                            3 -> {
+                                val songFragment = SongFragment()
+                                fragmentTransition(songFragment, position)
+                            }
+                            4 -> {
+                                val tellBeadsFragment = TellBeadsFragment()
+                                fragmentTransition(tellBeadsFragment, position)
+                            }
                         }
                     }
                 })
-        )
+        )*/
 
         return view
     }
@@ -73,13 +81,13 @@ class HomeFragment : Fragment() {
         MainActivity.instance?.supportActionBar!!.title = activityTitles[position + 1]
         MainActivity.navItemIndex = position + 1
         MainActivity.instance?.setupPageDetectableFAB()
-        val fragmentTransaction = activity.supportFragmentManager.beginTransaction()
-        fragmentTransaction.setCustomAnimations(
+        val fragmentTransaction = activity?.supportFragmentManager?.beginTransaction()
+        fragmentTransaction?.setCustomAnimations(
             android.R.anim.fade_in,
             android.R.anim.fade_out
         )
-        val replace = fragmentTransaction.replace(R.id.frame, fragment, TAG_HOME)
-        replace.commit()
+        val replace = fragmentTransaction?.replace(R.id.frame, fragment!!, TAG_HOME)
+        replace?.commit()
     }
 
     fun prepareHome() {
@@ -107,6 +115,6 @@ class HomeFragment : Fragment() {
     }
 
     companion object {
-        private const val TAG_HOME = "Home"
+        const val TAG_HOME = "Home"
     }
 }

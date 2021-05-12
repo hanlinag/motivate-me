@@ -1,12 +1,13 @@
 package com.motivation.team3.motivateme.activity
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.database.TaskDbHelper
 import com.readystatesoftware.systembartint.SystemBarTintManager
@@ -19,6 +20,7 @@ class AddNote : AppCompatActivity() {
     var stext: String? = null
     var sbody: String? = null
     var db: TaskDbHelper? = null
+    @SuppressLint("RestrictedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.node_add_layout)

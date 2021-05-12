@@ -3,13 +3,13 @@ package com.motivation.team3.motivateme.fragment
 import android.app.Activity
 import android.content.DialogInterface
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AlertDialog
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
 import com.motivation.team3.motivateme.R
 
 class TellBeadsFragment : Fragment() {
@@ -39,7 +39,7 @@ class TellBeadsFragment : Fragment() {
             }
         }
         btReset.setOnClickListener {
-            val builder = AlertDialog.Builder(context, R.style.AppCompatAlertDialogStyle)
+            val builder = AlertDialog.Builder(requireContext(), R.style.AppCompatAlertDialogStyle)
             builder.setTitle("Confirm")
             builder.setMessage("Are you sure want to reset?")
             builder.setPositiveButton("OK", Reset())

@@ -4,14 +4,14 @@ import android.app.Notification
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.NotificationCompat
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.NotificationCompat
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.adapter.CustomQuoteAdapter
 import com.motivation.team3.motivateme.model.Quote
@@ -32,7 +32,7 @@ class QuotesFragment : Fragment() {
         )
         recyclerView = view.findViewById<View>(R.id.recycler_view__quotes) as RecyclerView
         list = ArrayList()
-        adapter = CustomQuoteAdapter(context, list!!)
+        adapter = CustomQuoteAdapter(requireContext(), list!!)
         val mLayoutManager: RecyclerView.LayoutManager = GridLayoutManager(context, 1)
         recyclerView!!.layoutManager = mLayoutManager
         recyclerView!!.itemAnimator = DefaultItemAnimator()
@@ -250,7 +250,7 @@ class QuotesFragment : Fragment() {
             list!!.add(q)
         }
         val randomStr = quote[Random().nextInt(quote.size)]
-        val b = NotificationCompat.Builder(context)
+        val b = NotificationCompat.Builder(requireContext())
         b.setAutoCancel(true)
             .setDefaults(Notification.DEFAULT_ALL)
             .setWhen(System.currentTimeMillis())
@@ -260,13 +260,13 @@ class QuotesFragment : Fragment() {
             .setContentText(randomStr)
             .setDefaults(Notification.DEFAULT_LIGHTS or Notification.DEFAULT_SOUND)
             .setContentInfo("Info")
-        val bigText = android.support.v4.app.NotificationCompat.BigTextStyle()
+        val bigText = NotificationCompat.BigTextStyle()
         bigText.bigText(randomStr)
         bigText.setBigContentTitle("Quote of the day")
         bigText.setSummaryText("Quotes of the day for you. Have a nice success day.")
         b.setStyle(bigText)
         val notificationManager =
-            context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            context?.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.notify(1, b.build())
     }
 }

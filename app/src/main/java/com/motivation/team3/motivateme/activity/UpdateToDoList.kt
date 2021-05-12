@@ -1,23 +1,23 @@
 package com.motivation.team3.motivateme.activity
 
+import android.annotation.SuppressLint
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.database.TaskDbHelper
 import com.motivation.team3.motivateme.service.AlarmReceiver
 import com.readystatesoftware.systembartint.SystemBarTintManager
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog
-import com.wdullaer.materialdatetimepicker.time.RadialPickerLayout
 import com.wdullaer.materialdatetimepicker.time.TimePickerDialog
 import java.text.SimpleDateFormat
 import java.util.*
@@ -40,10 +40,11 @@ class UpdateToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     var txttitle: EditText? = null
     var time: Button? = null
     var date: Button? = null
+    @SuppressLint("RestrictedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.newnote_layout)
-        val toolbar = findViewById(R.id.appToolbar) as Toolbar
+        val toolbar = findViewById<Toolbar>(R.id.appToolbar)
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar!!.setHomeButtonEnabled(true)
@@ -82,7 +83,7 @@ class UpdateToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item!!.itemId) {
+        when (item.itemId) {
             R.id.action_add_task -> {
                 val txttitle = findViewById(R.id.new_title) as EditText
                 val title = txttitle.text.toString()
@@ -109,7 +110,7 @@ class UpdateToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         timepickerdialog.vibrate(true)
         timepickerdialog.dismissOnPause(true)
         timepickerdialog.enableSeconds(false)
-        timepickerdialog.show(fragmentManager, "Timepickerdialog") //show time picker dialog
+        timepickerdialog.show(supportFragmentManager, "Timepickerdialog") //show time picker dialog
     }
 
     fun openDatePickerDialog() {
@@ -123,7 +124,7 @@ class UpdateToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         datePickerDialog!!.isThemeDark = false
         datePickerDialog.vibrate(true)
         datePickerDialog.dismissOnPause(true)
-        datePickerDialog.show(fragmentManager, "Datepickerdialog")
+        datePickerDialog.show(supportFragmentManager, "Datepickerdialog")
     }
 
     override fun onDateSet(view: DatePickerDialog?, year: Int, monthOfYear: Int, dayOfMonth: Int) {
@@ -132,7 +133,7 @@ class UpdateToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         calSet!![Calendar.DAY_OF_MONTH] = dayOfMonth
         calSet!![Calendar.MONTH] = monthOfYear
         calSet!![Calendar.YEAR] = year
-        if (calSet!!.compareTo(calNow) <= 0) {
+        if (calSet!! <= calNow) {
             calSet!!.add(Calendar.DATE, 1)
         }
     }
@@ -144,8 +145,9 @@ class UpdateToDoList : AppCompatActivity(), DatePickerDialog.OnDateSetListener,
         alarmManager!![AlarmManager.RTC_WAKEUP, targetcal!!.timeInMillis] = pendingIntent
     }
 
-    override fun onTimeSet(view: RadialPickerLayout?, hourOfDay: Int, minute: Int, second: Int) {
-        val dt = Date(0, 0, 0, hourOfDay, minute, second)
+
+    override fun onTimeSet(view: TimePickerDialog?, hourOfDay: Int, minute: Int, second: Int) {
+        val dt = Date()
         val sdf = SimpleDateFormat("hh:mm a")
         stime = sdf.format(dt)
         time!!.text = stime

@@ -4,15 +4,14 @@ import android.content.Intent
 import android.graphics.Rect
 import android.os.Bundle
 import android.os.Handler
-import android.support.v4.app.Fragment
-import android.support.v7.widget.DefaultItemAnimator
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.RecyclerView.ItemDecoration
 import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DefaultItemAnimator
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.motivation.team3.motivateme.R
 import com.motivation.team3.motivateme.activity.UpDateNote
 import com.motivation.team3.motivateme.adapter.CustomNoteAdapter
@@ -35,7 +34,7 @@ class NotesFragment : Fragment() {
         super.onCreate(savedInstanceState)
         db = TaskDbHelper(activity)
         recyclerView = view.findViewById<View>(R.id.recycler_view_node) as RecyclerView
-        customNoteAdapter = CustomNoteAdapter(activity, db!!.allNoteData)
+        customNoteAdapter = CustomNoteAdapter(requireContext(), db!!.allNoteData)
         val layoutManager: RecyclerView.LayoutManager = GridLayoutManager(activity, 2)
         recyclerView!!.layoutManager = layoutManager
         recyclerView!!.addItemDecoration(GridSpacingItemDecoration(2, dpToPx(10), true))
@@ -43,9 +42,9 @@ class NotesFragment : Fragment() {
         recyclerView!!.adapter = customNoteAdapter
         onResume()
 
-        recyclerView!!.addOnItemTouchListener(
+        /*recyclerView!!.addOnItemTouchListener(
             RecyclerItemClickListener(
-                activity,
+                requireContext(),
                 object : RecyclerItemClickListener.OnItemClickListener {
                     override fun onItemClick(view: View?, position: Int) {
                         val note: Note? = db!!.getNoteData(position)
@@ -58,7 +57,7 @@ class NotesFragment : Fragment() {
                         startActivity(`in`)
                     }
                 })
-        )
+        )*/
 
         return view
     }
@@ -76,7 +75,7 @@ class NotesFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         Handler().post {
-            customNoteAdapter = CustomNoteAdapter(activity, db!!.allNoteData)
+            customNoteAdapter = CustomNoteAdapter(requireContext(), db!!.allNoteData)
             recyclerView!!.adapter = customNoteAdapter
         }
     }
@@ -85,7 +84,7 @@ class NotesFragment : Fragment() {
         private val spanCount: Int,
         private val spacing: Int,
         private val includeEdge: Boolean
-    ) : ItemDecoration() {
+    ) : RecyclerView.ItemDecoration() {
         override fun getItemOffsets(
             outRect: Rect,
             view: View,

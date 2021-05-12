@@ -13,24 +13,26 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/help_appToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
+                app:titleTextColor="@color/mdtp_white"
                 app:popupTheme="@color/colorToolbar"
                 app:title="About" />
 
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_weight="6.38"
+            android:layout_gravity="center_horizontal"
             android:src="@drawable/aboutcircle" />
 
         <TextView
