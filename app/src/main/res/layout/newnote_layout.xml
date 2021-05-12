@@ -4,8 +4,8 @@
     android:id="@+id/new_relative"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
 
     <android.support.design.widget.AppBarLayout
@@ -18,7 +18,7 @@
             android:layout_height="?attr/actionBarSize"
             app:layout_collapseMode="pin"
             app:popupTheme="@color/colorPrimary"
-            app:title="To Do List"/>
+            app:title="To Do List" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -27,17 +27,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Title"
+        android:maxLength="50"
         android:maxLines="1"
         android:textSize="23dp"
-        android:maxLength="50"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/new_body"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Note"
         android:layout_marginBottom="10dp"
+        android:hint="Note"
         android:imeOptions="actionDone"
         android:inputType="textMultiLine"
         android:maxLines="37"
@@ -46,9 +46,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
         android:weightSum="2">
 
@@ -57,8 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@+id/new_date"
             android:layout_toStartOf="@+id/new_date"
+            android:layout_toLeftOf="@+id/new_date"
             android:layout_weight="1"
             android:text="Time" />
 
@@ -66,9 +66,9 @@
             android:id="@+id/new_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
             android:layout_weight="1"
             android:text="Date" />
 

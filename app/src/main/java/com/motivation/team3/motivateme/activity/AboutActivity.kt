@@ -1,40 +1,34 @@
-package com.motivation.team3.motivateme.activity;
+package com.motivation.team3.motivateme.activity
 
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import com.motivation.team3.motivateme.R;
-import com.readystatesoftware.systembartint.SystemBarTintManager;
+import android.graphics.Color
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.Toolbar
+import android.view.Menu
+import android.view.MenuItem
+import com.motivation.team3.motivateme.R
+import com.readystatesoftware.systembartint.SystemBarTintManager
 
-public class AboutActivity extends AppCompatActivity{
-
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.about_layout);
-        Toolbar toolbar=(Toolbar)findViewById(R.id.help_appToolbar);
-        setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
-        SystemBarTintManager tintManager = new SystemBarTintManager(this);
-
-        tintManager.setStatusBarTintEnabled(true);
-        tintManager.setStatusBarTintColor(Color.parseColor("#0288d1"));
-        tintManager.setNavigationBarTintEnabled(true);
-
-    }
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        return super.onCreateOptionsMenu(menu);
+class AboutActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.about_layout)
+        val toolbar = findViewById(R.id.help_appToolbar) as Toolbar
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setHomeButtonEnabled(true)
+        val tintManager = SystemBarTintManager(this)
+        tintManager.isStatusBarTintEnabled = true
+        tintManager.setStatusBarTintColor(Color.parseColor("#0288d1"))
+        tintManager.setNavigationBarTintEnabled(true)
     }
 
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        finish();
-        return true;
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        finish()
+        return true
     }
 }

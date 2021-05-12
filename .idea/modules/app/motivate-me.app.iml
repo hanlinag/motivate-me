@@ -24,6 +24,31 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="4" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/f0472290fc91d87920d96455e8284cd6/design-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/c264b08d4218026ff838590877683dca/appcompat-v7-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/c223f130923f333d3091e75b8fd87036/materialdatetimepicker-2.3.0-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/8acf113b0ac0fd3c4b55f482960694c2/support-v4-24.2.1-api.jar:/Users/tyler/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar:/Users/tyler/.gradle/caches/modules-2/files-2.1/com.readystatesoftware.systembartint/systembartint/1.0.3/de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287/systembartint-1.0.3.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/a89c6b86f1c685139b14bb45bbff82fc/cardview-v7-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/18c06c47d1d9c1c728e3fff6b67b192c/recyclerview-v7-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/b909795a3a91e6ed941b356b1448316a/fab-1.6.2-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/d12da11c126e8eb7a558dbb3fc9fefca/animated-vector-drawable-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/fd8cff60a154884accec158b5e52a522/support-vector-drawable-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/ac376e9a99ed78bf2a63e765ce30c3a3/support-fragment-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/970d84eb3fbaa579fb640b2730101138/support-media-compat-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/374a197f11f1e9b4046ae9fc1c81a950/support-core-utils-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/0dece94aa8e3f87e595a709489a17e3e/support-core-ui-24.2.1-api.jar:/Users/tyler/.gradle/caches/transforms-2/files-2.1/b69c1a88d2f52a897200e05c024485db/support-compat-24.2.1-api.jar:/Users/tyler/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.2.1/8de3aafecbdf98a61db6427f008f2d515bcd2544/support-annotations-24.2.1.jar:/Users/tyler/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.5.0/f61904618ea7be07a66e0545ffe8dc2c70a19b77/kotlin-stdlib-jdk7-1.5.0.jar:/Users/tyler/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.0/29dae2501ca094416d15af0e21470cb634780444/kotlin-stdlib-1.5.0.jar:/Users/tyler/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/tyler/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.0/4080d69efca5e39e9b4972f125e40f1607bd6460/kotlin-stdlib-common-1.5.0.jar:/Users/tyler/Library/Android/sdk/platforms/android-30/android.jar:/Users/tyler/Library/Android/sdk/build-tools/30.0.2/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="languageVersion" value="1.5" />
+          <option name="apiVersion" value="1.5" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
@@ -44,7 +69,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../../app/build" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 24 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
@@ -62,6 +87,10 @@
     <orderEntry type="library" name="Gradle: com.github.bumptech.glide:glide:3.7.0" level="project" />
     <orderEntry type="library" name="Gradle: com.readystatesoftware.systembartint:systembartint:1.0.3" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:24.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design:24.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:24.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.wdullaer:materialdatetimepicker:2.3.0@aar" level="project" />

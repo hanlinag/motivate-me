@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -58,33 +58,33 @@
 
     <com.github.clans.fab.FloatingActionButton
         android:id="@+id/floating_todolist"
-        android:layout_gravity="bottom|right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:color="@color/colorPrimaryDark"
+        android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
         android:backgroundTint="#000"
-        android:src="@drawable/fab_add"/>
+        android:color="@color/colorPrimaryDark"
+        android:src="@drawable/fab_add" />
 
     <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/floating_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
         android:color="#000"
-        android:src="@drawable/fab_add"
-        android:id="@+id/floating_note"/>
+        android:src="@drawable/fab_add" />
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/floating_menu_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
         android:layout_marginLeft="11dp"
         android:layout_marginRight="11dp"
+        android:layout_marginBottom="11dp"
         android:color="#000"
         app:menu_animationDelayPerItem="55"
         app:menu_backgroundColor="@android:color/transparent"
@@ -118,17 +118,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:color="#000"
-            app:fab_size="mini"
             android:src="@drawable/ic_add_note"
-            fab:menu_fab_label="Add Note"/>
+            app:fab_size="mini"
+            fab:menu_fab_label="Add Note" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/floating_addtodolist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:color="#000"
-            app:fab_size="mini"
             android:src="@drawable/ic_add_todolist"
-            fab:menu_fab_label="Add To Do List"/>
+            app:fab_size="mini"
+            fab:menu_fab_label="Add To Do List" />
     </com.github.clans.fab.FloatingActionMenu>
 </android.support.design.widget.CoordinatorLayout>

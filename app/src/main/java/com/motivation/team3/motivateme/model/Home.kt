@@ -1,54 +1,27 @@
-package com.motivation.team3.motivateme.model;
+package com.motivation.team3.motivateme.model
 
-public class Home
-{
-    int image;
-    String functionName;
-    String titleHome;
+class Home {
+    var image = 0
+    var functionName: String? = null
+    var titleHome: String? = null
 
-    public Home(){}
-
-    public Home(int image) {
-        this.image = image;
+    constructor() {}
+    constructor(image: Int) {
+        this.image = image
     }
 
-    public Home(String titleHome, int image)
-    {
-        this.titleHome = titleHome;
-        this.image = image;
+    constructor(titleHome: String?, image: Int) {
+        this.titleHome = titleHome
+        this.image = image
     }
 
-    public Home(int image, String functionName, String titleHome) {
-        this.image = image;
-        this.functionName = functionName;
-        this.titleHome= titleHome;
+    constructor(image: Int, functionName: String?, titleHome: String?) {
+        this.image = image
+        this.functionName = functionName
+        this.titleHome = titleHome
     }
 
-    public Home(String titleHome) {
-        this.titleHome=titleHome;
-    }
-
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
-    }
-
-    public String getFunctionName() {
-        return functionName;
-    }
-
-    public void setFunctionName(String functionName) {
-        this.functionName = functionName;
-    }
-
-    public String getTitleHome() {
-        return titleHome;
-    }
-
-    public void setTitleHome(String titleHome) {
-        this.titleHome = titleHome;
+    constructor(titleHome: String?) {
+        this.titleHome = titleHome
     }
 }

@@ -1,31 +1,14 @@
-package com.motivation.team3.motivateme.model;
+package com.motivation.team3.motivateme.model
 
-public class Song {
-    String name;
-    String artist;
-    int image;
-    public Song(){
+class Song {
+    var name: String? = null
+    var artist: String? = null
+    var image = 0
 
-    }
-
-    public Song(String name, String artist, int image) {
-        this.name = name;
-        this.artist = artist;
-        this.image = image;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public String getArtist()
-    {
-        return artist;
-    }
-
-    public int getImage()
-    {
-        return image;
+    constructor() {}
+    constructor(name: String?, artist: String?, image: Int) {
+        this.name = name
+        this.artist = artist
+        this.image = image
     }
 }

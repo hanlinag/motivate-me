@@ -1,56 +1,41 @@
-package com.motivation.team3.motivateme.adapter;
+package com.motivation.team3.motivateme.adapter
 
-import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import com.motivation.team3.motivateme.R;
-import com.motivation.team3.motivateme.model.Home;
-import java.util.List;
+import android.content.Context
+import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import com.motivation.team3.motivateme.R
+import com.motivation.team3.motivateme.model.Home
 
-public class CustomHomeAdapter extends RecyclerView.Adapter<CustomHomeAdapter.MyViewHolder>
-{
-    Context context;
-    List<Home> list;
-
-    public CustomHomeAdapter(Context context, List<Home>  list)
-    {
-        this.context = context;
-        this.list=list;
+class CustomHomeAdapter(var context: Context, var list: List<Home>) :
+    RecyclerView.Adapter<CustomHomeAdapter.MyViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+        val itemView =
+            LayoutInflater.from(parent.context).inflate(R.layout.home_card_layout, parent, false)
+        return MyViewHolder(itemView)
     }
 
-    public CustomHomeAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
-    {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_card_layout, parent, false);
-        return new CustomHomeAdapter.MyViewHolder(itemView);
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        var song = Home()
+        song = list[position]
+        holder.image.setImageResource(song.image)
+        holder.text.text = song.titleHome
     }
 
-    public void onBindViewHolder(CustomHomeAdapter.MyViewHolder holder,final int position)
-    {
-        Home song = new Home();
-        song = list.get(position);
-        holder.image.setImageResource(song.getImage());
-        holder.text.setText(song.getTitleHome());
+    override fun getItemCount(): Int {
+        return list.size
     }
 
-    public int getItemCount() {
-        return list.size();
-    }
+    inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        var image: ImageView
+        var text: TextView
 
-    public class MyViewHolder extends RecyclerView.ViewHolder
-    {
-
-        public ImageView image;
-        public TextView text;
-        public MyViewHolder(View view)
-        {
-            super(view);
-            text=(TextView)view.findViewById(R.id.titletextView) ;
-            image=(ImageView) view.findViewById(R.id.home_img);
+        init {
+            text = view.findViewById<View>(R.id.titletextView) as TextView
+            image = view.findViewById<View>(R.id.home_img) as ImageView
         }
     }
-
 }

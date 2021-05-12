@@ -1,46 +1,39 @@
-package com.motivation.team3.motivateme.listener;
+package com.motivation.team3.motivateme.listener
 
-import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
-import android.view.View;
+import android.content.Context
+import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.RecyclerView.OnItemTouchListener
+import android.view.GestureDetector
+import android.view.GestureDetector.SimpleOnGestureListener
+import android.view.MotionEvent
+import android.view.View
 
-public class RecyclerItemClickListener implements RecyclerView.OnItemTouchListener
-{
-    private Context context;
-    private OnItemClickListener mListener;
 
-    public interface OnItemClickListener
-    {
-        public void onItemClick(View view, int position);
+class RecyclerItemClickListener(context: Context, listener: OnItemClickListener?) :
+    OnItemTouchListener {
+    private val context: Context = context
+    private val mListener: OnItemClickListener? = listener
+
+    interface OnItemClickListener {
+        fun onItemClick(view: View?, position: Int)
     }
 
-    GestureDetector mGestureDetector;
-
-    public RecyclerItemClickListener(Context context, OnItemClickListener listener) {
-        this.context = context;
-        mListener = listener;
-        mGestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
-
-            public boolean onSingleTapUp(MotionEvent e) {
-                return true;
+    private var mGestureDetector: GestureDetector =
+        GestureDetector(context, object : SimpleOnGestureListener() {
+            override fun onSingleTapUp(e: MotionEvent): Boolean {
+                return true
             }
-        });
-    }
+        })
 
-    public boolean onInterceptTouchEvent(RecyclerView view, MotionEvent e)
-    {
-        View childView = view.findChildViewUnder(e.getX(), e.getY());
+    override fun onInterceptTouchEvent(view: RecyclerView, e: MotionEvent): Boolean {
+        val childView: View? = view.findChildViewUnder(e.x, e.y)
         if (childView != null && mListener != null && mGestureDetector.onTouchEvent(e)) {
-            mListener.onItemClick(childView, view.getChildAdapterPosition(childView));
+            mListener.onItemClick(childView, view.getChildAdapterPosition(childView))
         }
-        return false;
+        return false
     }
 
-    public void onTouchEvent(RecyclerView view, MotionEvent motionEvent) {
-    }
+    override fun onTouchEvent(view: RecyclerView, motionEvent: MotionEvent) {}
+    override fun onRequestDisallowInterceptTouchEvent(disallowIntercept: Boolean) {}
 
-    public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-    }
 }

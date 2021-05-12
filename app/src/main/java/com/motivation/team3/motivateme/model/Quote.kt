@@ -1,29 +1,12 @@
-package com.motivation.team3.motivateme.model;
+package com.motivation.team3.motivateme.model
 
-public class Quote
-{
-    String quote,autor;
-    public Quote(){}
+class Quote {
+    var quote: String? = null
+    var autor: String? = null
 
-    public Quote(String quote, String autor)
-    {
-        this.quote = quote;
-        this.autor = autor;
-    }
-
-    public String getQuote() {
-        return quote;
-    }
-
-    public void setQuote(String quote) {
-        this.quote = quote;
-    }
-
-    public String getAutor() {
-        return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
+    constructor() {}
+    constructor(quote: String?, autor: String?) {
+        this.quote = quote
+        this.autor = autor
     }
 }

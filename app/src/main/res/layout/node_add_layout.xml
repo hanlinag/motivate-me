@@ -4,8 +4,8 @@
     android:id="@+id/note_relative"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
 
     <android.support.design.widget.AppBarLayout
@@ -18,8 +18,7 @@
             android:layout_height="?attr/actionBarSize"
             app:layout_collapseMode="pin"
             app:popupTheme="@color/colorToolbar"
-            app:title="Note"
-           />
+            app:title="Note" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -28,33 +27,33 @@
         android:id="@+id/note_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ffffff"
         android:hint="Title"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
         android:imeOptions="actionDone"
         android:inputType="text"
-        android:maxLines="1"
-        android:background="#ffffff"
         android:maxLength="58"
-        android:textColor="#000"/>
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/note_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="start"
         android:hint="Body"
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
         android:imeOptions="actionDone"
         android:inputType="textMultiLine"
-        android:gravity="start"
-        android:textSize="20dp"
-        android:background="#ffffff"
-        android:textColor="#000"/>
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#000"
+        android:textSize="20dp" />
 
 </LinearLayout>
