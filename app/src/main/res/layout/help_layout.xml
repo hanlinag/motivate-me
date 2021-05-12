@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="true" android:orientation="vertical" android:id="@+id/help_relative" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.design.widget.AppBarLayout android:layout_height="?attr/actionBarSize" android:layout_width="match_parent">
+
+    <android.support.v7.widget.Toolbar app:title="Help" android:layout_height="?attr/actionBarSize" android:layout_width="match_parent" android:id="@+id/help_appToolbar" app:popupTheme="@color/colorToolbar" app:layout_collapseMode="pin"/>
+
+</android.support.design.widget.AppBarLayout>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="25dp" android:textStyle="bold" android:layout_gravity="center" android:layout_marginTop="10dp" android:textAlignment="center" android:text="Motivate Me"/>
+
+    <View android:layout_height="2dp" android:layout_width="@dimen/view_length" android:layout_gravity="center" android:background="#555555"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/text_size" android:textStyle="normal" android:layout_marginTop="10dp" android:textAlignment="textStart" android:text="      This app is the app to motivate everyone. This app helps you to be a success person with these features in it. You can access the features by sliding the navigation drawer or by quick access the button in the home page." android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/text_size" android:textStyle="normal" android:layout_marginTop="10dp" android:textAlignment="textStart" android:text="      1. To Do List: This features acts like a reminder. You can add a new to do lists with the plus button. When it's about your time, it will give you an alert. " android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/text_size" android:textStyle="normal" android:layout_marginTop="10dp" android:textAlignment="textStart" android:text="      2. Notes: You can take your note quickly and easily. Do your notes." android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/text_size" android:textStyle="normal" android:layout_marginTop="10dp" android:textAlignment="textStart" android:text="      3. Quotes: Quotes can motivate people. Over hundred motivating quotes are in this version." android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/text_size" android:textStyle="normal" android:layout_marginTop="10dp" android:textAlignment="textStart" android:text="      4. Motivational Songs: The best motivational songs are in this feature. The motivational songs music videos are waiting for you on youtube." android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="@dimen/text_size" android:textStyle="normal" android:layout_marginTop="10dp" android:textAlignment="textStart" android:text="      5. Tell Beads: This feature is more useful for Myanmar people. It helps you to get the fresh mind by counting beads called 'Pa Tee Seat' in Myanmar . \n\n\n\n\n" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp"/>
+
+</LinearLayout>
+
+</ScrollView>

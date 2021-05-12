@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:weightSum="1" android:fitsSystemWindows="true" android:background="#ffffff" android:orientation="vertical" android:id="@+id/help_relative" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <android.support.design.widget.AppBarLayout android:layout_height="?attr/actionBarSize" android:layout_width="match_parent">
+
+    <android.support.v7.widget.Toolbar app:title="About" android:layout_height="?attr/actionBarSize" android:layout_width="match_parent" android:id="@+id/help_appToolbar" app:popupTheme="@color/colorToolbar" app:layout_collapseMode="pin"/>
+
+</android.support.design.widget.AppBarLayout>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_weight="6.38" android:src="@drawable/aboutcircle"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAlignment="center" android:textSize="25dp" android:layout_marginTop="20dp" android:textStyle="normal" android:text="Motivate Me"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAlignment="center" android:textSize="14dp" android:textStyle="normal" android:text="Version 1.0.1"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAlignment="viewStart" android:textSize="17dp" android:textStyle="normal" android:text="      The Motivate Me application is an application to motivate everyone. This application may offer people to complete their daily jobs smooth and easily.Everyone can use this application. For more detail, click the contact us menu to ask us on facebook or click the help menu for the explanation of the functions. \n" android:paddingTop="10dp" android:layout_marginRight="7dp" android:layout_marginLeft="10dp" android:paddingRight="7dp" android:paddingLeft="10dp"/>
+
+    <View android:layout_height="3dp" android:layout_width="@dimen/about_view_length" android:background="@color/colorAccent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:paddingBottom="20dp" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAlignment="center" android:textSize="17dp" android:textStyle="normal" android:text="Developed by - Soe Min Htet, Pyae Phyo Kyaw, Sai Han Lin Aung" android:layout_marginRight="7dp" android:layout_marginLeft="10dp" android:paddingRight="7dp" android:paddingLeft="10dp" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAlignment="center" android:textSize="17dp" android:textStyle="italic" android:text="(University of Computer Studies, Mandalay)" android:layout_marginRight="7dp" android:layout_marginLeft="10dp" android:paddingRight="7dp" android:paddingLeft="10dp" android:paddingBottom="20dp" android:layout_gravity="center"/>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_todolist"
+            android:icon="@drawable/ic_list"
+            android:title="@string/nav_todolist" />
+
+
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_note"
+            android:title="@string/nav_notes" />
+
+        <item
+            android:id="@+id/nav_quote"
+            android:icon="@drawable/ic_quotes"
+            android:title="@string/nav_quotes" />
+
+        <item
+            android:id="@+id/nav_song"
+            android:icon="@drawable/ic_songs"
+            android:title="@string/nav_song" />
+
+        <item
+            android:id="@+id/nav_breath"
+            android:icon="@drawable/ic_tellbeads"
+            android:title="@string/nav_breath" />
+    </group>
+
+</menu>

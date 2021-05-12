@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Motivate Me</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_todolist">To Do List</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_quotes">Motivational Quotes</string>
+    <string name="nav_song">Motivational Songs</string>
+    <string name="nav_breath">Tell Beads</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>To Do List</item>
+        <item>Notes</item>
+        <item>Motivational Quotes</item>
+        <item>Motivational Songs</item>
+        <item>Tell Beads</item>
+    </string-array>
+
+
+    <string name="action_contacat">Contact Us</string>
+    <string name="action_setting">Settings</string>
+    <string name="action_about">About</string>
+    <string name="actioin_help">Help</string>
+</resources>

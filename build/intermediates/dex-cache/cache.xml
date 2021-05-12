@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_423d1927422a0b3ecfb653c694283d2de1f097f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_14aa082aa06e48d3c3aad4e48961e97836585c58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_42a1d07977f8c368b892c81d8c66c1844887bf80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Update_sdk\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_62d203d07ff5e17671c0565cb6dc8a4fe89fc4a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_423d1927422a0b3ecfb653c694283d2de1f097f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_42a1d07977f8c368b892c81d8c66c1844887bf80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_14aa082aa06e48d3c3aad4e48961e97836585c58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_132056f2b8f29e07e535f4d06ad20b8d3e72032b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Update_sdk\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_62d203d07ff5e17671c0565cb6dc8a4fe89fc4a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_01158dd5fd8f93841c9fa6175ac91432ca612fea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_01158dd5fd8f93841c9fa6175ac91432ca612fea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_2059959baa4205b90a61d902252df0c1c541119f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_e39679acc5b5e02b908e8baf3b8ff95dcd0d286d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ucsm\.gradle\caches\modules-2\files-2.1\com.readystatesoftware.systembartint\systembartint\1.0.3\de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287\systembartint-1.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\systembartint-1.0.3_0ad68e56d8b6c8cf952e8ebfa83d2b2a0a7a3283.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_f6246f50dd675037a3136134ac5c23fc2673c70a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_132056f2b8f29e07e535f4d06ad20b8d3e72032b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_e39679acc5b5e02b908e8baf3b8ff95dcd0d286d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\2.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a95fd025efad7b05be3d29737bec37652e0fdb9e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.wdullaer-materialdatetimepicker-2.3.0_a47b4a9195899df519ac087bb1a0965cb68706f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_f6246f50dd675037a3136134ac5c23fc2673c70a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_2059959baa4205b90a61d902252df0c1c541119f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.wdullaer\materialdatetimepicker\2.3.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a95fd025efad7b05be3d29737bec37652e0fdb9e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.wdullaer-materialdatetimepicker-2.3.0_a47b4a9195899df519ac087bb1a0965cb68706f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_80edfcc06624daa9bdf3d93bc59a438fb9749246.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_25443c7d86f42613fe684725c6d30ee4152c6b23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_cb772862ea60272c205e106a365dbc32749842d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ucsm\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\glide-3.7.0_c200b611156279c94e73aeaeb71774005d524af3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_0664adfb500effb07ceb881886aba33192463579.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ucsm\.gradle\caches\modules-2\files-2.1\com.readystatesoftware.systembartint\systembartint\1.0.3\de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287\systembartint-1.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\systembartint-1.0.3_0ad68e56d8b6c8cf952e8ebfa83d2b2a0a7a3283.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_80edfcc06624daa9bdf3d93bc59a438fb9749246.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_cb21a1eb3829cb898ef20645b3159351e70b0c33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_b0dcfe5f2829965ee600984ceb7f363e630b5c21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_a417192919f4cd5a90ff8e54592edf9ab3288481.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\ucsm\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\glide-3.7.0_c200b611156279c94e73aeaeb71774005d524af3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_25443c7d86f42613fe684725c6d30ee4152c6b23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_cb772862ea60272c205e106a365dbc32749842d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_a417192919f4cd5a90ff8e54592edf9ab3288481.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_6adbe56d026354e1acd8ff3176fb62781f4b45ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.github.clans\fab\1.6.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e6a161b3796c15fe00755ce47e03067e568ecc4">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.github.clans-fab-1.6.2_16b1845fd52e6d40959c0215663cd66fb1b75eee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_0664adfb500effb07ceb881886aba33192463579.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_282f8fd5974b55cd83233820c38277e519623b56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_b0dcfe5f2829965ee600984ceb7f363e630b5c21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_6adbe56d026354e1acd8ff3176fb62781f4b45ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.github.clans\fab\1.6.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e6a161b3796c15fe00755ce47e03067e568ecc4">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.github.clans-fab-1.6.2_16b1845fd52e6d40959c0215663cd66fb1b75eee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_cb21a1eb3829cb898ef20645b3159351e70b0c33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Motivation\MotivateMe\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="D:\Android\Motivation\MotivateMe\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_282f8fd5974b55cd83233820c38277e519623b56.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,32 @@
+<ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View android:layout_height="2dp" android:layout_width="match_parent" android:background="@color/colorPrimary"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginBottom="25dp" android:layout_marginTop="26dp" android:textStyle="bold" android:visibility="visible" android:id="@+id/textView1" android:textSize="25dp" android:textColor="#404040" android:text="Be still and pay your attention to your telling beads" android:gravity="center"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:weightSum="10">
+
+    <TextView android:layout_height="45dp" android:layout_width="180dp" android:id="@+id/numb" android:textSize="20dp" android:text="Number of Click" android:gravity="center" android:layout_weight="5" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="45dp" android:layout_width="180dp" android:id="@+id/count" android:textSize="20dp" android:text="Number of Round" android:gravity="center" android:layout_weight="5" android:layout_gravity="center"/>
+
+</LinearLayout>
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:weightSum="10">
+
+    <TextView android:layout_height="45dp" android:layout_width="wrap_content" android:id="@+id/tvclickcount" android:textSize="40dp" android:text="0" android:gravity="right" android:layout_weight="5" android:layout_gravity="center" style="@style/Widget.AppCompat.ListPopupWindow" android:layout_marginRight="3dp" android:layout_marginLeft="3dp" android:textAlignment="center" android:paddingLeft="3dp" android:paddingRight="3dp"/>
+
+    <TextView android:layout_height="45dp" android:layout_width="wrap_content" android:id="@+id/tvroundcount" android:textSize="40dp" android:textColor="#000" android:text="0" android:gravity="right" android:layout_weight="5" android:layout_gravity="center" android:layout_marginRight="3dp" android:layout_marginLeft="3dp" android:textAlignment="center" android:paddingLeft="3dp" android:paddingRight="3dp"/>
+
+</LinearLayout>
+
+    <Button android:layout_height="200dp" android:layout_width="200dp" android:background="@drawable/circle_button" android:layout_marginBottom="20dp" android:layout_marginTop="20dp" android:id="@+id/btClick" android:textSize="20dp" android:text="Click" android:layout_gravity="center" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+
+    <Button android:layout_height="200dp" android:layout_width="200dp" android:background="@drawable/circle_button" android:layout_marginBottom="20dp" android:layout_marginTop="20dp" android:id="@+id/btReset" android:textSize="20dp" android:text="Reset" android:layout_gravity="center" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+
+</LinearLayout>
+
+</ScrollView>
